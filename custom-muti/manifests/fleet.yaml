@@ -10,7 +10,7 @@ targetCustomizations:
     - noreplication
 
 - name: local
-  clusterSelector:{}
+  clusterSelector: {}
   yaml:
     overlays:
     # Refers to overlays/scale3 folder
