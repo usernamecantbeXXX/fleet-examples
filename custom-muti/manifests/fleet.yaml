@@ -1,6 +1,6 @@
 namespace: fleet-mc-manifest-example
 targetCustomizations:
-- name: dev
+- name: c-hr5b4
   clusterSelector:
     matchLabels:
       env: gcr
@@ -9,10 +9,8 @@ targetCustomizations:
     # Refers to overlays/noreplication folder
     - noreplication
 
-- name: test
-  clusterSelector:
-    matchLabels:
-      env: test
+- name: local
+  clusterSelector:{}
   yaml:
     overlays:
     # Refers to overlays/scale3 folder
